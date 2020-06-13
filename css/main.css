@@ -1,0 +1,87 @@
+@charset "utf-8";
+
+h2
+{
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+  line-height: 120px;
+}
+
+
+p
+{
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+
+
+body{
+  background-color:#000;
+}
+
+
+#musicBoard {
+    width: 100%;
+    text-align: center;
+}
+
+.hidden {
+    display: none
+}
+
+.mainBoard {
+    margin-top: 40px;
+    height: 450px;
+    display: inline-block;
+    border: medium solid #331a00;
+    background: url(../images/temple_background.jpg) no-repeat bottom;
+    color: inherit;
+    width:800px;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    position: relative;
+    width: 600px;
+    margin: 30px auto 0;
+    text-align: center;
+}
+
+footer p
+{
+  margin-bottom: 20px;
+}
+
+
+
+#iconHolder {
+    margin: 0px auto;
+    text-align: center;
+}

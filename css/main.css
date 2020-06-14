@@ -58,13 +58,13 @@ body{
 
 
 
-
-
-
-
-
-
-
+.drop-zone {
+    width: 49.5%;
+    height: 49.5%;
+    border: thin dashed white;
+    float: left;
+    position: relative;
+}
 
 
 footer {
@@ -84,4 +84,12 @@ footer p
 #iconHolder {
     margin: 0px auto;
     text-align: center;
+}
+
+#iconHolder img {
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 20px;
+    border: thin solid #333;
+    cursor: pointer;
 }

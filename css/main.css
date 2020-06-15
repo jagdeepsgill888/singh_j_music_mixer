@@ -89,7 +89,7 @@ footer p
 #iconHolder img {
     margin-left: 5px;
     margin-right: 5px;
-    border-radius: 20px;
-    border: thin solid #333;
+    border-radius: 13px;
+    border: thin solid #804000;
     cursor: pointer;
 }

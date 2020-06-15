@@ -1,0 +1,29 @@
+<svg id="drumIcon" xmlns="http://www.w3.org/2000/svg" width="51.41" height="52.53" viewBox="0 0 51.41 52.53">
+  <defs>
+    <style>
+      .cls-1, .cls-3 {
+        fill: none;
+        stroke: #ee2d2c;
+      }
+
+      .cls-1 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        fill: #ee2d2c;
+      }
+
+      .cls-3 {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    </style>
+  </defs>
+  <ellipse id="topCircleBig" class="cls-1" cx="64.08" cy="22.31" rx="9.2" ry="21.81" transform="translate(-7.55 68.44) rotate(-77.63)"/>
+  <path id="topCircleSmall" class="cls-2" d="M74.08,24.22c-.51,2.35-5.44,3.26-11,2s-9.67-4.11-9.15-6.46,5.44-3.26,11-2S74.6,21.88,74.08,24.22Z" transform="translate(-36.11 -11.69)"/>
+  <path id="outterDrum" class="cls-1" d="M42.58,19.91c-1.21,1.49-7.34,10.75-5.69,22a25.34,25.34,0,0,0,5.76,12.79c9.24,10.52,27.28,11.67,36.41,4.15a18.84,18.84,0,0,0,3.42-3.79c7.39-10.53,3.82-24,2.62-27.76" transform="translate(-36.11 -11.69)"/>
+  <path id="curveLine2" class="cls-1" d="M63,31.41s-8.44,26.85-6,31.93" transform="translate(-36.11 -11.69)"/>
+  <path id="curveLine3" class="cls-1" d="M76.12,32.1s-.33,26-8.87,31.61" transform="translate(-36.11 -11.69)"/>
+  <path id="curveLine1" class="cls-3" d="M50.48,27.79s-11,15.88-4.12,30.35" transform="translate(-36.11 -11.69)"/>
+</svg>

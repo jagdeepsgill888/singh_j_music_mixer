@@ -19,11 +19,11 @@ p
 
 
 body{
-  background-color:#000;
+  background-color:#ccc;
 }
 
-
-#musicBoard {
+/*
+#music-board {
     width: 100%;
     text-align: center;
 }
@@ -32,18 +32,21 @@ body{
     display: none
 }
 
-.mainBoard {
+.main-board {
     margin-top: 40px;
-    height: 450px;
+    width: 500px;
+    height: 270px;
     display: inline-block;
     border: medium solid #331a00;
-    background: url(../images/temple_background.jpg) no-repeat bottom;
     color: inherit;
-    width:800px;
     overflow: hidden;
 }
 
 
+.main-board svg {
+  width: 400px;
+  z-index: -1;
+}
 
 
 
@@ -56,15 +59,28 @@ body{
 
 
 
-
+#dropArea {
+    margin: 0px auto;
+    text-align: center;
+    width: 150px;
+    height: 60px;
+    line-height: 170px;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    top: 50px;
+}
 
 .drop-zone {
-    width: 49.5%;
-    height: 49.5%;
+    width: 25px;
+    height: 19px;
+    border: 2px solid red;
+    border-radius: 25px;
     border: thin dashed white;
     float: left;
     position: relative;
 }
+
 
 
 footer {
@@ -92,4 +108,143 @@ footer p
     border-radius: 13px;
     border: thin solid #804000;
     cursor: pointer;
+}
+*/
+@charset "utf-8";
+
+/* CSS Document */
+
+body {
+    background-repeat: repeat;
+    background-color: #333;
+    color: #FFF;
+    font-family: 'Luckiest Guy', sans-serif;
+    font-size: 16px;
+}
+
+.hidden {
+    display: none
+}
+
+#game-boards {
+    width: 100%;
+    text-align: center;
+}
+
+.puzzle-pieces,
+.radio-board {
+    margin-top: 40px;
+    height: 400px;
+    display: inline-block;
+    border: medium solid #333;
+    background-color: #000;
+    color: inherit;
+    overflow: hidden;
+}
+
+.puzzle-pieces {
+    width: 170px;
+    margin-right: 20px;
+    border: medium solid #331a00;
+}
+
+.radio-board {
+    width: 600px;
+    border: medium solid #331a00
+}
+
+.puzzle-image {
+    width: 40%;
+    display: block;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.puzzle-pieces img:nth-child(odd) {
+    margin-left: auto
+}
+
+/* arrange the puzzle pieces on the board */
+.drop-zone img {
+  position: absolute;
+  bottom: 0;
+  padding: 0;
+  margin: 0;
+  width: auto;
+}
+
+
+/*.br svg, .bl svg {
+  top:  0;
+}
+
+.tl svg, .bl svg {
+  right: 0;
+} */
+
+/* set up drop zones */
+
+ /*.drop-zone {
+    width: 49.5%;
+    height: 49.5%;
+    border: thin dashed white;
+    float: left;
+    position: relative;
+}     */
+
+
+/* end board styles */
+
+header {
+    position: relative;
+    top: 20px;
+    width: 600px;
+    margin: 0px auto;
+    text-align: center;
+}
+
+
+header p,
+footer p {
+
+    letter-spacing: 2px;
+    margin: 10px
+}
+
+footer {
+    position: relative;
+    width: 400px;
+    margin: 65px auto 0;
+    text-align: center;
+}
+
+
+
+/* me */
+.radio-board svg{
+  z-index: -1;
+  width: 400px;
+  margin-top: 45px;
+}
+
+
+.sound-pieces {
+ border: thin solid #804000;
+ border-radius: 9px;
+ width: 67px;
+ height: 62px;
+ margin: auto;
+}
+
+.sound-pieces img {
+  padding-top: 5px;
+}
+
+#iconHolder {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  flex-wrap: nowrap;
+  margin-left: 25%;
 }

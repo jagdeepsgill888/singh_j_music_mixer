@@ -1,8 +1,11 @@
 (() => {
+
+    console.log('fired!');
     // set up the puzzle pieces and boards
     const puzzlePieces = document.querySelectorAll('.puzzle-image'),
           dropZones = document.querySelectorAll('sound-pieces');
 
+    let imageNames = ["drumIcon", "voiceIcon", "fluteIconVerison2", "sitarIconVerison7"];
     // add event handling here -> how is the user going to use our app?
     // what triggers do we need?
 

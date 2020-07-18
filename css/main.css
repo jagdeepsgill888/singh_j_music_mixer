@@ -115,7 +115,6 @@ footer p
 /* CSS Document */
 
 body {
-    background-image: url(../images/puzzle2.jpg);
     background-repeat: repeat;
     background-color: #333;
     color: #FFF;
@@ -204,17 +203,12 @@ header {
     text-align: center;
 }
 
-header h2 {
-    font-size: 3em;
-    letter-spacing: 3px;
-    margin: 10px 0
-}
 
 header p,
 footer p {
 
     letter-spacing: 2px;
-    margin: 10px 
+    margin: 10px
 }
 
 footer {
@@ -224,25 +218,10 @@ footer {
     text-align: center;
 }
 
-#buttonHolder {
-    margin: 0px auto;
-    text-align: center;
-}
 
-#buttonHolder img {
-    margin-left: 5px;
-    margin-right: 5px;
-    border-radius: 20px;
-    border: thin solid #333;
-    cursor: pointer;
-}
-
-#buttonHolder img:hover {
-    opacity: .5;
-}
 
 /* me */
-.radio-board svg {
+.radio-board svg{
   z-index: -1;
   width: 400px;
   margin-top: 45px;

@@ -18,10 +18,11 @@
 		<!-- these are the draggable pieces -> drag them to the right -->
 		<div class="puzzle-pieces">
 				<h3 class="hidden">The Drag Zone</h3>
-				<img id='image0' src="images/drum_icon.svg" alt="Drum Icon" class="puzzle-image 0" draggable="true">
-				<img id='image1' src="images/voice_icon.svg" alt="Voice Icon" class="puzzle-image 1" draggable="true">
-				<img id='image2' src="images/flute_icon_verison_2.svg" alt="flute Icon" class="puzzle-image 2" draggable="true">
-				<img id='image3' src="images/sitar_icon_verison_7.svg" alt="Sitar Icon" class="puzzle-image 3" draggable="true">
+				<audio src="assets/indian_drums_loop.wav" controls></audio>
+				<img id='image0' src="images/drum_icon.svg" alt="Drum Icon" class="puzzle-image 0 trackRef" data-trackref="indian_drums_loop.wav" draggable="true">
+				<img id='image1' src="images/voice_icon.svg" alt="Voice Icon" class="puzzle-image 1 trackRef" data-trackref="humming.wav" draggable="true">
+				<img id='image2' src="images/flute_icon_verison_2.svg" alt="flute Icon" class="puzzle-image 2 trackRef" data-trackref="flute.wav" draggable="true">
+				<img id='image3' src="images/sitar_icon_verison_7.svg" alt="Sitar Icon" class="puzzle-image 3 trackRef" data-trackref="sitar.wav" draggable="true">
 		</div>
 
 		<!-- drop the puzzle pieces here -->
@@ -454,11 +455,6 @@
 			 </svg>
 
 			 <!--end of svg-->
-				<h3 class="hidden">The Drop Zones</h3>
-				<div class="drop-zone tl"></div>
-				<div class="drop-zone tr"></div>
-				<div class="drop-zone bl"></div>
-				<div class="drop-zone br"></div>
 		</div>
 </section>
 
@@ -470,8 +466,9 @@
 					<div class="sound-pieces"></div>
 					<div class="sound-pieces"></div>
 					<div class="sound-pieces"></div>
-
 				</nav>
+				<button class="controls">Play</button>
+		    <button class="controls">Stop</button>
     </footer>
 
 

@@ -248,3 +248,19 @@ footer {
   flex-wrap: nowrap;
   margin-left: 25%;
 }
+
+
+
+/* audio */
+audio
+{
+  display: block !important;
+  width: 150px;
+
+}
+
+
+.trackRef
+{
+  cursor: pointer;
+}

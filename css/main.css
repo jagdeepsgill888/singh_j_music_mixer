@@ -212,9 +212,9 @@ header h2 {
 
 header p,
 footer p {
-    font-size: 1.5em;
+
     letter-spacing: 2px;
-    margin: 10px 0
+    margin: 10px 
 }
 
 footer {

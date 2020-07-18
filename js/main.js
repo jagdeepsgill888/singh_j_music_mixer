@@ -1,12 +1,25 @@
 (() => {
     // set up the puzzle pieces and boards
-    const soundPieces = document.querySelectorAll('.sound-image'),
-        dropZones = document.querySelectorAll('.drop-zone'),
-        musicBoard = document.querySelector(".main-board");
+    const puzzlePieces = document.querySelectorAll('.puzzle-image'),
+          dropZones = document.querySelectorAll('sound-pieces');
 
-    let imageNames = ["bottom1", "bottom2", "bottom3"];
     // add event handling here -> how is the user going to use our app?
     // what triggers do we need?
+
+
+
+  // reset the selection puzzle pieces after changing the game puzzle pieces
+    function resetPuzzlePieces ()
+    {
+      let puzzlePlain = document.querySelector(".puzzle-pieces");
+      for (let zone of dropZones) {
+        console.log(zone.firstChild);
+        if(zone.firstChild){
+          puzzlePlain.appendChild(zone.firstChild);
+        }
+
+      }
+    }
 
 
     // debugger;
@@ -28,13 +41,25 @@
 
     let droppedImage =  event.dataTransfer.getData("draggedImg");
 
+    if (event.currentTarget.children.length === 0) {
     event.target.appendChild(document.querySelector(`#${droppedImage}`));
-    //debugger;
+    debugger;
     }
+  }
 
 
 
-    soundPieces.forEach(piece => piece.addEventListener('dragstart', allowDrag));
+    puzzlePieces.forEach(piece => piece.addEventListener('dragstart', allowDrag));
+
+    dropZones.forEach((dropZone) => {
+      while (dropZone.firstChild) {
+
+        let currentChild = dropZone.removeChild(dropZone.firstChild);
+        piecesPlain.appendChild(currentChild);
+      }
+
+    })
+
 
     for (let zone of dropZones) {
         zone.addEventListener('dragover', allowDragOver);

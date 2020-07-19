@@ -115,7 +115,7 @@ footer p
 /* CSS Document */
 
 body {
-    background-repeat: repeat;
+    background-repeat:no-repeat;
     background-color: #333;
     color: #FFF;
     font-family: 'Luckiest Guy', sans-serif;

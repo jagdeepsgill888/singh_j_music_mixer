@@ -16,12 +16,6 @@ p
   text-align: center;
 }
 
-
-
-body{
-  background-color:#ccc;
-}
-
 /*
 #music-board {
     width: 100%;
@@ -115,6 +109,7 @@ footer p
 /* CSS Document */
 
 body {
+    background: url(../images/taj_mahal.jpg);
     background-repeat:no-repeat;
     background-color: #333;
     color: #FFF;
@@ -131,26 +126,25 @@ body {
     text-align: center;
 }
 
-.puzzle-pieces,
-.radio-board {
-    margin-top: 40px;
-    height: 400px;
-    display: inline-block;
-    border: medium solid #333;
-    background-color: #000;
-    color: inherit;
-    overflow: hidden;
-}
-
 .puzzle-pieces {
     width: 170px;
     margin-right: 20px;
     border: medium solid #331a00;
+    margin-top: 40px;
+    height: 300px;
+    display: inline-block;
+    overflow: hidden;
+    background-color: rgb(51, 51, 51, .8);
+    border-radius: 15px;
 }
 
 .radio-board {
-    width: 600px;
-    border: medium solid #331a00
+    margin-top: 40px;
+    height: 400px;
+    display: inline-block;
+    overflow: hidden;
+    width: 500px;
+    margin-right: 20%;
 }
 
 .puzzle-image {
@@ -214,7 +208,7 @@ footer p {
 footer {
     position: relative;
     width: 400px;
-    margin: 65px auto 0;
+    margin: 40px auto 0;
     text-align: center;
 }
 
@@ -222,9 +216,8 @@ footer {
 
 /* me */
 .radio-board svg{
-  z-index: -1;
   width: 400px;
-  margin-top: 45px;
+  margin-top: 26%;
 }
 
 
@@ -246,7 +239,7 @@ footer {
   flex-direction: row;
   flex-grow: 1;
   flex-wrap: nowrap;
-  margin-left: 25%;
+  margin-left: 3%;
 }
 
 

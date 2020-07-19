@@ -16,12 +16,6 @@ p
   text-align: center;
 }
 
-
-
-body{
-  background-color:#ccc;
-}
-
 /*
 #music-board {
     width: 100%;
@@ -115,6 +109,7 @@ footer p
 /* CSS Document */
 
 body {
+    background: url(../images/taj_mahal.jpg);
     background-repeat:no-repeat;
     background-color: #333;
     color: #FFF;
@@ -222,7 +217,6 @@ footer {
 
 /* me */
 .radio-board svg{
-  z-index: -1;
   width: 400px;
   margin-top: 45px;
 }

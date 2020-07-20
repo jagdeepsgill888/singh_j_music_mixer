@@ -3,7 +3,7 @@
     console.log('fired!');
     // set up the puzzle pieces and boards
     const puzzlePieces = document.querySelectorAll('.puzzle-image'),
-          dropZones = document.querySelectorAll('sound-pieces');
+          dropZones = document.querySelectorAll('.sound-pieces');
 
     let imageNames = ["drumIcon", "voiceIcon", "fluteIconVerison2", "sitarIconVerison7"];
         audioControls = document.querySelectorAll('.controls'),

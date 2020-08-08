@@ -24,7 +24,7 @@
         if(zone.firstChild){
           puzzlePlain.appendChild(zone.firstChild);
         }
-      
+       audio.pause();
       }
     }
 
@@ -51,15 +51,8 @@
     if (event.currentTarget.children.length === 0) {
     event.target.appendChild(document.querySelector(`#${droppedImage}`));
 
-
-    let currentSound = document.createElement('audio');
-				currentSound.src = `assets/${this.dataset.trackref}`;
-
-	   			currentSound.load();
-
-					currentSound.loop = "true";
-         	currentSound.play();
-
+   //audio.play();
+    //audio.loop = "true";
     }
   }
 

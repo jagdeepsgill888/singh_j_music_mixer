@@ -5,10 +5,11 @@
     const puzzlePieces = document.querySelectorAll('.puzzle-image'),
           dropZones = document.querySelectorAll('.sound-pieces');
 
-    let imageNames = ["drumIcon", "voiceIcon", "fluteIconVerison2", "sitarIconVerison7"];
+    let imageNames = ["drumIcon", "voiceIcon", "fluteIconVerison2", "sitarIconVerison7"],
         audioControls = document.querySelectorAll('.controls'),
-        audio = document.querySelector('audio');
-        audioThumbs = document.querySelectorAll('.trackRef');
+        audio = document.querySelector('audio'),
+        audioThumbs = document.querySelectorAll('.trackRef'),
+        resetButton = document.querySelector('.fa-undo-alt');
     // add event handling here -> how is the user going to use our app?
     // what triggers do we need?
 
@@ -110,5 +111,6 @@
     // listen for the end of the audio track
      audio.addEventListener('ended', () => console.log('track ended'));
 
+    resetButton.addEventListener('click', resetPuzzlePieces);
 
 })();

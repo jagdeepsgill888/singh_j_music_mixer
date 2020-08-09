@@ -24,7 +24,7 @@
         if(zone.firstChild){
           puzzlePlain.appendChild(zone.firstChild);
         }
-
+       audio.pause();
       }
     }
 
@@ -50,7 +50,9 @@
 
     if (event.currentTarget.children.length === 0) {
     event.target.appendChild(document.querySelector(`#${droppedImage}`));
-    debugger;
+
+   //audio.play();
+    //audio.loop = "true";
     }
   }
 

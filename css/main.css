@@ -168,26 +168,6 @@ body {
 }
 
 
-/*.br svg, .bl svg {
-  top:  0;
-}
-
-.tl svg, .bl svg {
-  right: 0;
-} */
-
-/* set up drop zones */
-
- /*.drop-zone {
-    width: 49.5%;
-    height: 49.5%;
-    border: thin dashed white;
-    float: left;
-    position: relative;
-}     */
-
-
-/* end board styles */
 
 header {
     position: relative;
@@ -231,6 +211,7 @@ footer {
 
 .sound-pieces img {
   padding-top: 5px;
+  width: 80%;
 }
 
 #iconHolder {
@@ -255,7 +236,7 @@ audio
 
 .trackRef
 {
-  cursor: pointer;
+
 }
 
 
